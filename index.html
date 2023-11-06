@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: relative; display: inline-block;">
+        <div 
+        style=
+            "position: absolute; 
+            display: flex; 
+            width: 100%; 
+            align-items: center;
+            padding: 20px;">
+            <!-- -------------------player health----------------- -->
+        <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-start;">
+            <div style="background: yellow; height: 30px; width: 100%;">
+            </div>
+            <div 
+                id="playerHealth" 
+                style=
+                "position: absolute; 
+                background: cornflowerblue; 
+                top: 0; 
+                right: 0; 
+                width: 100%; 
+                bottom: 0;">
+
+            </div>
+        </div>
+
+            <!-- -------------------time----------------------------- -->
+            <div 
+            id="timer"
+            style=
+                "background-color: rgb(0, 136, 255);
+                width: 100px; 
+                height: 100px; 
+                flex-shrink: 0;
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;"></div>
+            <!-- -------------------enemy health------------------------- -->
+            
+            
+            
+            <div style="position: relative; height: 30px; width: 100%;">
+                <div  style="background: yellow; height: 30px;">
+                </div>
+                <div 
+                id="enemyHealth" 
+                style=
+                "position: absolute; 
+                background: cornflowerblue; 
+                top: 0; 
+                right: 0; 
+                left: 0; 
+                bottom: 0;">
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div
+            id="gametime"
+            style=
+            "position: absolute;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            font-size: 2rem;
+            display: none;
+            color: white;
+            ">Tie</div>
+
+        <canvas></canvas>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
